@@ -1,15 +1,10 @@
-#import csv and json packages
-import csv, json
+import csv
+import json
 
-csvpath = "batch-data.csv"
-jsonpath = "batch-data.json"
+csvfile = open('uk-data-sept2020.csv', 'r')
+jsonfile = open('uk-data-sept2020.json', 'w')
 
-data = {}
-with open(csvpath) as csvFile:
-    csvReader = csv.DictReader(csvFile)
-    for rows in csvReader:
-        id = rows['Case ID']
-        data[id]= rows
-
-with open(jsonpath, 'w') as jsonFile:
-    jsonFile.write(json.dumps(data,indent=4))
+fieldnames = ("country","customerRequest","subject","caseId","description")
+reader = csv.DictReader( csvfile, fieldnames)
+out = json.dumps( [ row for row in reader ] )
+jsonfile.write(out)

@@ -56,10 +56,8 @@ for i in range(0, len(data)):
 
 #fuzzy logic search
 for i in range(0, len(data)):
-    data["fuzz1"].iloc[i] = fuzz.token_set_ratio(
-        data["Contact Name"].iloc[i], data["Name1"].iloc[i])
-    data["fuzz2"].iloc[i] = fuzz.token_set_ratio(
-        data["Contact Name"].iloc[i], data["Name2"].iloc[i])
+    data["fuzz1"].iloc[i] = fuzz.token_set_ratio(data["Contact Name"].iloc[i], data["Name1"].iloc[i])
+    data["fuzz2"].iloc[i] = fuzz.token_set_ratio(data["Contact Name"].iloc[i], data["Name2"].iloc[i])
     if(data["fuzz1"].iloc[i] > 75 or data["fuzz2"].iloc[i] > 75):
         data["ai-match1"].iloc[i] = "Correct"
     elif(data["fuzz1"].iloc[i] == 0 and data["fuzz2"].iloc[i] == 0):

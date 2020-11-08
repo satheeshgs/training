@@ -6,7 +6,7 @@ import numpy as np
 import Levenshtein as lev
 from fuzzywuzzy import fuzz
 
-data = pd.read_csv("find-contact-oct9.csv")
+data = pd.read_csv("find-contact-oct16v1.csv")
 #converting the data to be compared into lower case
 data["Contact Name"] = data["Contact Name"].str.lower()
 data["Predicted Contact"] = data["Predicted Contact"].str.lower()
@@ -24,11 +24,11 @@ for i in range(0, len(data)):
 data["Name"] = names
 data['Name1'] = ''
 data['Name2'] = ''
-data['lev1'] = ''
-data['lev2'] = ''
+#data['lev1'] = ''
+#data['lev2'] = ''
 data['fuzz1'] = ''
 data['fuzz2'] = ''
-data['ai-match'] = ''
+#data['ai-match'] = ''
 data['ai-match1'] = ''
 
 #separating the names to separate columns
@@ -44,15 +44,15 @@ for i in range(len(data)):
         pass
 
 #levenshtein ratio
-for i in range(0, len(data)):
-    data["lev1"].iloc[i] = lev.ratio(data["Contact Name"].iloc[i], data["Name1"].iloc[i])
-    data["lev2"].iloc[i] = lev.ratio(data["Contact Name"].iloc[i], data["Name2"].iloc[i])
-    if(data["lev1"].iloc[i] > 0.5 or data["lev2"].iloc[i] > 0.5):
-        data["ai-match"].iloc[i] = "Correct"
-    elif(data["lev1"].iloc[i] == 0 and data["lev2"].iloc[i] == 0):
-        data["ai-match"].iloc[i] = "No Prediction"
-    else:
-        data["ai-match"].iloc[i] = "Partialy Correct/ Incorrect"
+#for i in range(0, len(data)):
+#    data["lev1"].iloc[i] = lev.ratio(data["Contact Name"].iloc[i], data["Name1"].iloc[i])
+#    data["lev2"].iloc[i] = lev.ratio(data["Contact Name"].iloc[i], data["Name2"].iloc[i])
+#    if(data["lev1"].iloc[i] > 0.5 or data["lev2"].iloc[i] > 0.5):
+#        data["ai-match"].iloc[i] = "Correct"
+#    elif(data["lev1"].iloc[i] == 0 and data["lev2"].iloc[i] == 0):
+#        data["ai-match"].iloc[i] = "No Prediction"
+#    else:
+#        data["ai-match"].iloc[i] = "Partialy Correct/ Incorrect"
 
 #fuzzy logic search
 for i in range(0, len(data)):
@@ -65,4 +65,4 @@ for i in range(0, len(data)):
     else:
         data["ai-match1"].iloc[i] = "Partialy Correct/ Incorrect"
 
-data.to_csv('process-report-oct9-v2.csv', index=False)
+data.to_csv('process-report-oct16v1.csv', index=False)

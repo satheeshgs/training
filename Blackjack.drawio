@@ -1,0 +1,43 @@
+<mxfile host="app.diagrams.net" modified="2020-12-24T14:50:42.597Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="rFE7GXKdn9vNFFdtsuij" version="14.1.2" type="github">
+  <diagram id="oxAQfYbEyv0llxnTuDkd" name="Page-1">
+    <mxGraphModel dx="782" dy="469" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="FJH4LLreNILDttVc8Qyn-1" value="Start" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="20" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FJH4LLreNILDttVc8Qyn-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="FJH4LLreNILDttVc8Qyn-2" target="FJH4LLreNILDttVc8Qyn-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FJH4LLreNILDttVc8Qyn-2" value="Ask user if they want to play blakcjack y / n" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="90" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="FJH4LLreNILDttVc8Qyn-4" value="Start BlackJack Game" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="170" width="105" height="52.5" as="geometry" />
+        </mxCell>
+        <mxCell id="FJH4LLreNILDttVc8Qyn-5" value="Say &quot;See you soon&quot; and exit" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="88.5" width="105" height="52.5" as="geometry" />
+        </mxCell>
+        <mxCell id="FJH4LLreNILDttVc8Qyn-9" value="Deal first set of cards to user and computer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="325" y="250" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="FJH4LLreNILDttVc8Qyn-10" value="Show only users 2 cards and computers 1 card" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="325" y="320" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="FJH4LLreNILDttVc8Qyn-12" value="Ask user if he wants another card" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="400" width="95" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="FJH4LLreNILDttVc8Qyn-13" value="Give another card if user wants a card and calculate new score" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="325" y="520" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FJH4LLreNILDttVc8Qyn-14" value="If user score &amp;gt; 21" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="345" y="620" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FJH4LLreNILDttVc8Qyn-15" value="say &quot;you lose&quot;&amp;nbsp; and quit" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="640" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

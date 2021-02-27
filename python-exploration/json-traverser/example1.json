@@ -1,0 +1,22 @@
+[
+  {
+    "category": "hr",
+    "subcategory": "leave",
+    "question": "maternity leave"
+  },
+  {
+    "category": "hr",
+    "subcategory": "leave",
+    "question": "paternity leave"
+  },
+  {
+    "category": "hr",
+    "subcategory": "payroll",
+    "question": "it service"
+  },
+  {
+    "category": "hr",
+    "subcategory": "payroll",
+    "question": "communication"
+  }
+]

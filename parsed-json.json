@@ -1,0 +1,37 @@
+[
+    {
+      "start": "yes",
+      "parent": "hr",
+      "child": ["leave", "payroll"]
+    },
+    {
+      "start": "no",
+      "parent": "leave",
+      "child": ["maternity leave", "paternity leave"]
+    },
+    {
+      "start": "no",
+      "parent": "maternity leave",
+      "child": []
+    },    
+    {
+      "start": "no",
+      "parent": "paternity leave",
+      "child": []
+    },
+    {
+      "start": "no",
+      "parent": "payroll",
+      "child": ["form 16", "investment declaration"]
+    },
+    {
+      "start": "no",
+      "parent": "form 16",
+      "child": []
+    },    
+    {
+      "start": "no",
+      "parent": "investment declaration",
+      "child": []
+    }
+  ]

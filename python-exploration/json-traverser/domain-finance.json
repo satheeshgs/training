@@ -1,0 +1,17 @@
+[
+    {
+      "start": "yes",
+      "parent": "finance",
+      "child": ["cash flow", "credit score"]
+    },
+    {
+      "start": "no",
+      "parent": "cash flow",
+      "child": []
+    },    
+    {
+      "start": "no",
+      "parent": "credit score",
+      "child": []
+    }
+]

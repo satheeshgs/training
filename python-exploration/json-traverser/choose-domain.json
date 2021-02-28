@@ -1,0 +1,10 @@
+[
+  {
+    "name": "hr",
+    "filepath": "domain-hr.json"
+  },
+  {
+    "name": "finance",
+    "filepath": "domain-finance.json"
+  }
+]

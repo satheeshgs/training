@@ -1,9 +1,18 @@
 #import necessary libraries
 import json
-with open('C:\Users\SESA445854\Documents\Python-training\git-repos\training\parsed-json.json') as f:
+import pandas as pd
+
+json_data = pd.read_json("parsed-json.json")
+
+"""
+with open('parsed-json.json') as f:
   json_data = json.load(f)
+"""
 
+print(type(json_data))
+print(json_data)
 
+"""
 #function to recursively pass through the json
 def recursiveJson(json, string):
     for key in json:
@@ -16,3 +25,4 @@ def recursiveJson(json, string):
 
 #testing out with json example
 recursiveJson(json_data, 'hr')
+"""

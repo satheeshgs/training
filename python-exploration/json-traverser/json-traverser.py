@@ -39,19 +39,20 @@ def main():
     
     #setting json data to traverse based on domain
     json_to_traverse = pd.read_json(domain_json_path)
-
+    
     #traversing the json and going to the leaf node based on user input
     should_continue = False
     while should_continue is False:
         options = recursiveJson(json_to_traverse, user_input)
         print(options)
+
         if leafNode(options):
-            should_continue = True      
+            should_continue = True
         else:
             user_input = input("choose from the options \n")
+            user_question = user_input
     
     print(user_question)
-
 
 #starting the main function
 if __name__ == "__main__":

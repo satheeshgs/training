@@ -23,5 +23,5 @@ def returnDomainJson(json, domain):
 #find the ancestor of a parent
 def findParent(json, str):
     for i in range(0, len(json)):
-        if json["parent"][i] == domain.lower():
+        if json["parent"][i] == str.lower():
             return json["ancestor"][i]

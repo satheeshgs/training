@@ -8,7 +8,7 @@ def main():
     json_data = pd.read_json("choose-domain.json")
     domains_available = []
     for i in range(0,len(json_data)):
-        domains.append(json_data["name"][i])
+        domains_available.append(json_data["name"][i])
     user_input = input(f"Please choose your domain: \n{domains_available}\n")
     """
     chosen_json = pd.read_json(returnDomainJson(domain))

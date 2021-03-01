@@ -34,7 +34,7 @@ def main():
             user_question = user_input
     
     #send user question to Q&A maker after the leafnode is hit
-    print(f"The question to be sent to Q&A maker is /{user_question}/")
+    print(f"The question to be sent to Q&A maker is /{user_question}/\n \n")
     answer = findAnswer(json_answers, user_question)
     print(f"The answer to the question is \n{answer}\n")
     

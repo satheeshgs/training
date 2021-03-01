@@ -1,0 +1,42 @@
+[
+    {
+        "question": "request access",
+        "answer": "For raising access to github please send an email to satheesh.gowtham@gmail.com"
+    },
+    {
+        "question": "issue resolution",
+        "answer": "Please raise a HR request for your issues"
+    },
+    {
+        "question": "request jira",
+        "answer": "Please send an email to john doe for requesting for a new jira license"
+    },
+    {
+        "question": "jira issue",
+        "answer": "Please reach out to the it helpdesk at your local store"
+    },
+    {
+        "question": "confluence",
+        "answer": "The confluence page is available here"
+    },
+    {
+        "question": "skype issue",
+        "answer": "For skype related issues reach out to your it helpdesk"
+    },
+    {
+        "question": "network connectivity",
+        "answer": "For network related issues reach out to jane doe"
+    },
+    {
+        "question": "ticket status",
+        "answer": "Please check the ticket status in our it portal"
+    },
+    {
+        "question": "asset management",
+        "answer": "Visit our assets portal to choose the required asset and activate or deactivate it"
+    },
+    {
+        "question": "purchasing",
+        "answer": "Purchasing is handled by supriya mitra ;)"
+    }
+]

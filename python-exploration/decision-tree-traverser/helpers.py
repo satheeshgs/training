@@ -17,7 +17,7 @@ def leafNode(arr):
 def returnDomainJson(json, domain):
     for i in range(0, len(json)):
         if json["name"][i] == domain.lower():
-            return json["filepath"][i]
+            return json["filepath"][i], json["answers"][i]
 
 
 
@@ -26,3 +26,12 @@ def findParent(json, str):
     for i in range(0, len(json)):
         if json["parent"][i] == str.lower():
             return json["ancestor"][i]
+
+
+
+#find the answer from the Q&A maker pairs in the json
+def findAnswer(json, question):
+    for i in range(0,len(json)):
+        if json["question"][i] == question.lower():
+            return json["answer"][i]
+

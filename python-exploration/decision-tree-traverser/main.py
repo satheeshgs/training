@@ -14,7 +14,9 @@ def main():
     user_input = input(f"Please choose your domain: \n{domains_available}\n")
 
     #getting the json filepath for traversing based on domain
-    domain_json_path = returnDomainJson(json_data, user_input)
+    domain_json_path, answer_json_path = returnDomainJson(json_data, user_input)
+    print(domain_json_path)
+    print(answer_json_path)
     
     #setting json data to traverse based on domain
     json_to_traverse = pd.read_json(domain_json_path)
@@ -32,6 +34,8 @@ def main():
     
     #send user question to Q&A maker after the leafnode is hit
     print(f"The question to be sent to Q&A maker is /{user_question}/")
+    answer = findAnswer(answer_json_path, user_question)
+    print(f"The answer to the question is \n{answer}\n")
 
 
 #starting the main function

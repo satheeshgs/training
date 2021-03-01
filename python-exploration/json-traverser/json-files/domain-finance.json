@@ -1,16 +1,16 @@
 [
     {
-      "start": "yes",
+      "ancestor": "",
       "parent": "finance",
       "child": ["cash flow", "credit score"]
     },
     {
-      "start": "no",
+      "ancestor": "finance",
       "parent": "cash flow",
       "child": []
     },    
     {
-      "start": "no",
+      "ancestor": "finance",
       "parent": "credit score",
       "child": []
     }

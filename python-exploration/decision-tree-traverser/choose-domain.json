@@ -1,14 +1,14 @@
 [
   {
     "name": "hr",
-    "filepath": "json-files/domain-hr.json"
+    "filepath": "json-files/hr/domain-hr.json"
   },
   {
     "name": "finance",
-    "filepath": "json-files/domain-finance.json"
+    "filepath": "json-files/finance/domain-finance.json"
   },
   {
     "name": "it",
-    "filepath": "json-files/domain-it.json"
+    "filepath": "json-files/it/domain-it.json"
   }
 ]

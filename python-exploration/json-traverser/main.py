@@ -5,13 +5,16 @@ from helpers import *
 
 def main():
     #ask for domain input from user and pass it to recursiveJson function
-    
-    user_input = input("Please choose your domain: 'hr' or 'finance' or 'it'\n")
+    json_data = pd.read_json("choose-domain.json")
+    domains_available = []
+    for i in range(0,len(json_data)):
+        domains.append(json_data["name"][i])
+    user_input = input(f"Please choose your domain: \n{domains_available}\n")
     """
     chosen_json = pd.read_json(returnDomainJson(domain))
     """
     #getting the json filepath for traversing based on domain
-    json_data = pd.read_json("choose-domain.json")
+    #json_data = pd.read_json("choose-domain.json")
     domain_json_path = returnDomainJson(json_data, user_input) 
     
     #setting json data to traverse based on domain

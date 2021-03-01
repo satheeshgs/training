@@ -14,9 +14,14 @@ def leafNode(arr):
         return True
 
 # function to return the domain specific json
-
-
 def returnDomainJson(json, domain):
     for i in range(0, len(json)):
         if json["name"][i] == domain.lower():
             return json["filepath"][i]
+
+
+#find the ancestor of a parent
+def findParent(json, str):
+    for i in range(0, len(json)):
+        if json["parent"][i] == domain.lower():
+            return json["ancestor"][i]

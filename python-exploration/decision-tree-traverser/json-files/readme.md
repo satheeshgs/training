@@ -1,1 +1,0 @@
-This contains all the domain related json files

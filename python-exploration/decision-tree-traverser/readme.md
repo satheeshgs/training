@@ -1,1 +1,2 @@
-Json traverser will traverse a json tree structure in a prescribed manner
+The decision tree traverser needs through the domain json
+It traverses the json to the leaf node and then fetches the answer from the json file for answers; this can be used to send the answer to Q&A maker and fetching the answers

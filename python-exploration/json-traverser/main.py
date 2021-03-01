@@ -1,35 +1,12 @@
 #import necessary libraries
 import pandas as pd
-import json
+from helpers import *
 
-"""
-#reading the necessary json and converting to a dataframe
-json_data = pd.read_json("parsed-json.json")
-"""
-
-#function to recursively pass through the json and return the child value
-def recursiveJson(json, parent):
-    for i in range(0, len(json)):
-        if json["parent"][i] == parent.lower():
-            return (json["child"][i])
-
-#function to check if returned child value is a leaf node or not
-def leafNode(arr):
-    if len(arr) > 0:
-        return False
-    else:
-        return True
-
-# function to return the domain specific json
-def returnDomainJson(json, domain):
-    for i in range(0,len(json)):
-        if json["name"][i] == domain.lower():
-            return json["filepath"][i]
 
 def main():
     #ask for domain input from user and pass it to recursiveJson function
     
-    user_input = input("Please choose your domain: 'hr' or 'finance'")
+    user_input = input("Please choose your domain: 'hr' or 'finance' or 'it'\n")
     """
     chosen_json = pd.read_json(returnDomainJson(domain))
     """
@@ -44,15 +21,16 @@ def main():
     should_continue = False
     while should_continue is False:
         options = recursiveJson(json_to_traverse, user_input)
-        print(options)
 
         if leafNode(options):
             should_continue = True
         else:
-            user_input = input("choose from the options \n")
+            user_input = input(f"choose from the options \n{options}\n")
             user_question = user_input
     
-    print(user_question)
+    #send user question to Q&A maker after the leafnode is hit
+    print(f"The question to be sent to Q&A maker is /{user_question}/")
+
 
 #starting the main function
 if __name__ == "__main__":

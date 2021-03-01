@@ -6,5 +6,9 @@
   {
     "name": "finance",
     "filepath": "domain-finance.json"
+  },
+  {
+    "name": "it",
+    "filepath": "domain-it.json"
   }
 ]

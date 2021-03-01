@@ -28,11 +28,11 @@ def main():
         if leafNode(options):
             should_continue = True
         else:
-            user_input = input(f"choose from the options \n{options}\n")
+            user_input = input(f"\nchoose from the options \n{options}\n")
             user_question = user_input
     
     #send user question to Q&A maker after the leafnode is hit
-    print(f"The question to be sent to Q&A maker is /{user_question}/\n \n")
+    print(f"\nThe question to be sent to Q&A maker is /{user_question}/\n \n")
     answer = findAnswer(json_answers, user_question)
     print(f"The answer to the question is \n{answer}\n")
     

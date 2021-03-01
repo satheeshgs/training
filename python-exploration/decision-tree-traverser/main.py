@@ -20,6 +20,7 @@ def main():
     
     #setting json data to traverse based on domain
     json_to_traverse = pd.read_json(domain_json_path)
+    json_answers = pd.read_json(answer_json_path)
     
     #traversing the json and going to the leaf node based on user input
     should_continue = False
@@ -34,8 +35,9 @@ def main():
     
     #send user question to Q&A maker after the leafnode is hit
     print(f"The question to be sent to Q&A maker is /{user_question}/")
-    answer = findAnswer(answer_json_path, user_question)
+    answer = findAnswer(json_answers, user_question)
     print(f"The answer to the question is \n{answer}\n")
+    
 
 
 #starting the main function

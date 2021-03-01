@@ -34,4 +34,3 @@ def findAnswer(json, question):
     for i in range(0,len(json)):
         if json["question"][i] == question.lower():
             return json["answer"][i]
-

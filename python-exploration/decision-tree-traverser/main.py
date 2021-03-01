@@ -15,8 +15,6 @@ def main():
 
     #getting the json filepath for traversing based on domain
     domain_json_path, answer_json_path = returnDomainJson(json_data, user_input)
-    print(domain_json_path)
-    print(answer_json_path)
     
     #setting json data to traverse based on domain
     json_to_traverse = pd.read_json(domain_json_path)

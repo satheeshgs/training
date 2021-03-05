@@ -1,37 +1,37 @@
 [
     {
-      "start": "yes",
+      "ancestor": "",
       "parent": "hr",
       "child": ["leave", "payroll"]
     },
     {
-      "start": "no",
+      "ancestor": "hr",
       "parent": "leave",
       "child": ["maternity leave", "paternity leave"]
     },
     {
-      "start": "no",
+      "ancestor": "leave",
       "parent": "maternity leave",
       "child": []
     },    
     {
-      "start": "no",
+      "ancestor": "leave",
       "parent": "paternity leave",
       "child": []
     },
     {
-      "start": "no",
+      "ancestor": "hr",
       "parent": "payroll",
       "child": ["form 16", "investment declaration"]
     },
     {
-      "start": "no",
+      "ancestor": "payroll",
       "parent": "form 16",
       "child": []
     },    
     {
-      "start": "no",
+      "ancestor": "payroll",
       "parent": "investment declaration",
       "child": []
     }
-  ]
+]

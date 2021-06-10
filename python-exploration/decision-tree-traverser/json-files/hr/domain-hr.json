@@ -1,0 +1,37 @@
+[
+    {
+      "ancestor": "",
+      "parent": "hr",
+      "child": ["leave", "payroll"]
+    },
+    {
+      "ancestor": "hr",
+      "parent": "leave",
+      "child": ["maternity leave", "paternity leave"]
+    },
+    {
+      "ancestor": "leave",
+      "parent": "maternity leave",
+      "child": []
+    },    
+    {
+      "ancestor": "leave",
+      "parent": "paternity leave",
+      "child": []
+    },
+    {
+      "ancestor": "hr",
+      "parent": "payroll",
+      "child": ["form 16", "investment declaration"]
+    },
+    {
+      "ancestor": "payroll",
+      "parent": "form 16",
+      "child": []
+    },    
+    {
+      "ancestor": "payroll",
+      "parent": "investment declaration",
+      "child": []
+    }
+]

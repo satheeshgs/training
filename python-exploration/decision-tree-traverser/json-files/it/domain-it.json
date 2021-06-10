@@ -1,0 +1,87 @@
+[
+    {
+      "ancestor": "",
+      "parent": "it",
+      "child": ["2929it request", "skype help", "itsm ticket"]
+    },
+    {
+      "ancestor": "it",
+      "parent": "2929it request",
+      "child": ["github request", "jira request", "confluence"]
+    },
+    {
+      "ancestor": "2929it request",
+      "parent": "github request",
+      "child": ["request access", "issue resolution"]
+    },
+    {
+      "ancestor": "github request",
+      "parent": "request access",
+      "child": []
+    },    
+    {
+      "ancestor": "github request",
+      "parent": "issue resolution",
+      "child": []
+    },
+    {      
+      "ancestor": "2929it request",
+      "parent": "jira request",
+      "child": ["request jira", "jira issue"]
+    },
+    {
+      "ancestor": "jira request",
+      "parent": "request jira",
+      "child": []
+    },    
+    {
+      "ancestor": "jira request",
+      "parent": "jira issue",
+      "child": []
+    },
+    {
+      "ancestor": "2929it request",
+      "parent": "confluence",
+      "child": []
+    },
+    {
+      "ancestor": "it",
+      "parent": "skype help",
+      "child": ["skype issue", "network connectivity"]
+    },
+    {
+      "ancestor": "skype help",
+      "parent": "skype issue",
+      "child": []
+    },    
+    {
+      "ancestor": "skype help",
+      "parent": "network connectivity",
+      "child": []
+    },
+    {
+      "ancestor": "it",
+      "parent": "itsm ticket",
+      "child": ["ticket status", "raise new"]
+    },
+    {
+      "ancestor": "itsm ticket",
+      "parent": "ticket status",
+      "child": []
+    },    
+    {
+      "ancestor": "itsm ticket",
+      "parent": "raise new",
+      "child": ["asset management", "purchasing"]
+    },
+    {
+      "ancestor": "raise new",
+      "parent": "asset management",
+      "child": []
+    },
+    {
+      "ancestor": "raise new",
+      "parent": "purchasing",
+      "child": []
+    }
+]

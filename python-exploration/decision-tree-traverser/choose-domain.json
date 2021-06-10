@@ -1,0 +1,17 @@
+[
+  {
+    "name": "hr",
+    "filepath": "json-files/hr/domain-hr.json",
+    "answers": "json-files/hr/hr-ans.json"
+  },
+  {
+    "name": "finance",
+    "filepath": "json-files/finance/domain-finance.json",
+    "answers": "json-files/finance/finance-ans.json"
+  },
+  {
+    "name": "it",
+    "filepath": "json-files/it/domain-it.json",
+    "answers": "json-files/it/it-ans.json"
+  }
+]

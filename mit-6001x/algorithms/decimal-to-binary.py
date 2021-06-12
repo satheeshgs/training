@@ -1,4 +1,5 @@
 def decimal2bin(x):
+    '''prints the binary number of a decimal value'''
     p = 0
     while ((2**p)*x)%1 != 0:
         print('Remainder = ' + str((2**p)*x - int((2**p)*x)))

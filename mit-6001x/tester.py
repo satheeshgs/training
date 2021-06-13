@@ -5,15 +5,27 @@ Created on Sun Jun 13 11:58:41 2021
 
 @author: satheesh
 """
-
-def gcdIter(a, b):
+def isIn(char, aStr):
     '''
-    a, b: positive integers
+    char: a single character
+    aStr: an alphabetized string
     
-    returns: a positive integer, the greatest common divisor of a & b.
+    returns: True if char is in aStr; False otherwise
     '''
     # Your code here
-    test_val = b
-    while a%test_val!=0 or b%test_val !=0:
-        test_val-=1
-    return test_val
+    a = ''.join(sorted(aStr))
+    
+    low = 0
+    high = len(a)
+    mid = (low+high)/2
+    
+    while mid != low:
+        if char < a[mid]:
+            low = mid
+        else:
+            high = mid
+        mid = (low+high)/2
+    
+    return 
+    
+    

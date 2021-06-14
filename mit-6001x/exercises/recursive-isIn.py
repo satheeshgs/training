@@ -7,7 +7,7 @@ def isIn(char, aStr):
     '''
     # Your code here
     aStr = ''.join(sorted(aStr))
-    if len(aStr) == '0':
+    if len(aStr) == 0:
         return False
 
     if len(aStr) == 1:

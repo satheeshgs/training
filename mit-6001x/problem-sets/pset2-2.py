@@ -24,4 +24,5 @@ def minimumMonthlyPaymentCalculator(balance, annualInterestRate):
     
     print('Lowest Payment: '+ str(minMonthlyPayment))
 
-minimumMonthlyPaymentCalculator(balance, annualInterestRate)
+
+minimumMonthlyPaymentCalculator(balance=320000, annualInterestRate = 0.2)

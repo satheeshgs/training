@@ -1,0 +1,1 @@
+C training as part of CS50

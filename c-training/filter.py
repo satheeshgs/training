@@ -1,28 +1,30 @@
 def corners(height, width):
-    for i in range(0, 2):
-        for j in range(0, 2):
-            print(i, j)
-    
-    print('left top')
+    for i in range(0, height, height - 1):
+        for j in range(0, width, width - 1):
+            if i == 0 and j  ==0:
+                print('left top')
+                for k in range(0,2):
+                    for l in range(0,2):
+                        print(i+k, j+l)
+         
+            if i == height -1 and j ==0:
+                print('left bottom')
+                for k in range(-1, 1):
+                    for l in range(0, 2):
+                        print(i+k, j+l)
 
-    for i in range(height-1, height-3, -1):
-        for j in range(width-1, width-3, -1):
-            print(i, j)
-    
-    print('right bottom')
+            if i == 0 and j == width -1:
+                print('right top')
+                for k in range(0,2):
+                    for l in range(-1,1):
+                        print(i+k, j+l)
 
-    for i in range(0, 2):
-        for j in range(width-1, width-3, -1):
-            print(i,j)
+            if i == height - 1 and j == width - 1:
+                print('right bottom')
+                for k in range(-1,1):
+                    for l in range(-1,1):
+                        print(i+k, j+l)
     
-    print('left bottom')
-    
-    for i in range(height-1, height-3, -1):
-        for j in range(0, 2):
-            print(i,j)
-    
-    print('right top')
-
 
 def first_row(height, width):
     print('first row')
@@ -69,7 +71,5 @@ def right_column(height, width):
         print('--------Counter = ', counter)
 
 
-first_row(4,4)
-last_row(4,4)
-left_column(4,4)
-right_column(4,4)
+
+corners(5,4)

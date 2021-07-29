@@ -1,0 +1,9 @@
+1. Pass the necessary caesar cipher key into the main function using an argument
+2. If user does not pass cipher key, then prompt again/ throw error message
+3. Add the value of the cipher text to the value of each element in the original/ plain text
+4. Modulo the operation by 26 to switch back to loop between A-Z or a-z
+5. Print the result to the user
+
+
+a to z ; 97 to 122
+A to Z; 65 to 90

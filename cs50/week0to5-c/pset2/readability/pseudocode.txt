@@ -1,0 +1,17 @@
+The Coleman-Liau index of a text is designed to output what (U.S.) grade level is needed to understand the text. The formula is
+    index = 0.0588 * L - 0.296 * S - 15.8
+
+    L - average number of letters per 100 words in the text
+    S - average number of sentences per 100 words in the text
+
+Functions required:
+1. function for finding number of words in text
+2. function for finding total number of letters in text
+3. function for finding total number of sentences in text
+
+Steps required:
+1. Get the text from the user
+2. Find number of letters per 100 words
+3. Find number of sentences per 100 words
+4. Use the coleman-liad index and round it off
+5. Print the result to the user

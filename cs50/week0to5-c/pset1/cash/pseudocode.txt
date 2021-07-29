@@ -1,0 +1,7 @@
+Greedy algorithm
+
+25 cents, 10 cents, 5 cents and 1 cent are available
+
+#1 multiply the changes to cash to be given by 100 and take the integer portion
+#2 Start by dividing the integer by the 25 and add the quotient to the number of coins
+#3 Repeat the process from the next highest cents till 1 cent and count the number of coins

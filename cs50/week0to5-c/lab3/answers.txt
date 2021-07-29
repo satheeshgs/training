@@ -1,0 +1,11 @@
+sort1 uses: bubble sort
+
+How do you know?: When the list is sorted, this algorithm performs really better compared to an unsorted list and the order seems to be that of n for a sorted list and n^2 for that of an unsorted list
+
+sort2 uses: merge sort
+
+How do you know?: Performs the best for random and reversed list, but performs poorly for a sorted list compared to bubble sort
+
+sort3 uses: selection sort
+
+How do you know?: time taken is similar across all sorts and is highest for higher number of items in the list. It's increasing of the order of n^2

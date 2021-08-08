@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+
+        <script>
+
+            // TODO: Add code to check answers to questions
+            document.addEventListener("DOMContentLoaded", function(){
+                console.log("Web content loaded. Waiting for user response");
+                var buttons = document.getElementsByClassName("button");
+                var message = document.getElementById("message1");
+                for (let i = 0; i < buttons.length; i++){
+                    buttons[i].addEventListener("click", function(){
+                    console.log("user clicked something");
+
+
+                    if (buttons[i].id == "correct")
+                    {
+                        reset_buttons();
+                        console.log("user clicked the correct option");
+                        buttons[i].style.backgroundColor = 'green';
+                        buttons[i].style.color = 'white';
+                        message.innerHTML = "Correct!";
+                    }
+                    else
+                    {
+                        reset_buttons();
+                        console.log("user clicked the wrong option");
+                        buttons[i].style.backgroundColor = 'red';
+                        buttons[i].style.color = 'white';
+                        message.innerHTML = "Incorrect";
+                    }
+                })
+            }
+            document.getElementById("check").addEventListener('click', function()
+            {
+                var user_input = document.getElementById("freeinput");
+                var message = document.getElementById("message2");
+                if (user_input.value.toLowerCase() == 'tamilnadu')
+                {
+                    console.log("user entered the correct option");
+                    message.innerHTML = 'Correct!';
+                    user_input.style.backgroundColor  = 'green';
+                    user_input.style.color = 'white';
+                }
+                else
+                {
+                    console.log("user entered the wrong option");
+                    message.innerHTML = 'Incorrect';
+                    user_input.style.backgroundColor  = 'red';
+                    user_input.style.color = 'white';
+                }
+            })
+        })
+
+        // function to reset the already clicked buttons
+        function reset_buttons()
+        {
+            var buttons = document.getElementsByClassName("button");
+            for (let i = 0; i < buttons.length; i++)
+            {
+                buttons[i].style.backgroundColor = '#d9edff';
+                buttons[i].style.color = '#000000';
+            }
+        }
+
+        </script>
+
+    </head>
+    <body>
+
+        <div class="jumbotron">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+
+                <!-- TODO: Add multiple choice question here -->
+                <h3>How many states are there in India in 2021?</h3>
+                <button id = "incorr1" class = "button">29 states</button>
+                <button id = "correct" class = "button">28 states</button>
+                <button id = "incorr2" class = "button">26 states</button>
+                <button id = "incorr3" class = "button">27 states</button>
+
+                <p id = "message1"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+
+                <!-- TODO: Add free response question here -->
+                <h3>In which state is chennai located?</h3>
+                <input type="text" id = "freeinput">
+                <button id = "check">Check Answer</button>
+
+                <p id = "message2"></p>
+            </div>
+
+        </div>
+    </body>
+</html>

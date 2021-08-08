@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset = 'UTF-8'>
+        <meta name = "description" content = "CS50 assignment website">
+        <title>Satheesh's Website</title>
+        <link rel="stylesheet" href="styles.css">
+
+        <script>
+
+            document.addEventListener("DOMContentLoaded", function(){
+                var x = document.getElementsByClassName("info");
+                x[0].addEventListener("click", function(){
+                    window.alert("This is a math jpeg created by freepik.");
+                })
+            })
+
+
+        </script>
+
+
+
+    </head>
+    <body>
+        <!--This is a comment-->
+        <header>
+            <div class="topnav">
+                <a href="index.html">Home</a>
+                <a class="active" href = "maths.html">Maths</a>
+                <a href = "trivia.html">Trivia</a>
+                <a href = "about.html">About</a>
+            </div> 
+        </header>
+        <main>  
+        <h1>
+            Maths
+        </h1>
+        <button class="info" type = "submit">Click me</button>
+        <hr/>
+        <img class = "inhouse" src = "https://www.journalarjom.com/public/journals/51/homepageImage_en_US.jpg">
+        </main>
+        <footer>
+            <div class="footer">
+                <p>Satheesh's first CS50 html page</p>
+            </div>
+        </footer>
+    </body>
+</html>

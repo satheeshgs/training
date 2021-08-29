@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block main %}
+    <table class="table table-striped">
+        <thead style="text-align:left;">
+            <th>Symbol</th>
+            <th>Name</th>
+            <th>Shares</th>
+            <th>Price</th>
+            <th>Total</th>
+        </thead>
+        <tbody>
+            {% for stock in stocks %}
+            <tr style="text-align:left;">
+                <td style="text-transform:uppercase;">{{stock.symbol}}</td>
+                <td>{{stock.name}}</td>
+                <td>{{stock.shares}}</td>
+                <td>{{stock.price | usd}}</td>
+                <td>{{stock.total | usd}}</td>
+            </tr>
+            {% endfor %}
+            <tr>
+                <td colspan="4" style="text-align:left;">CASH</td>
+                <td style="text-align:left;">{{user_cash | usd}}</td>
+            </tr>
+        <tfoot>
+            <td colspan="4" style="text-align:left;"></td>
+            <td style="text-align:left;">{{total_cash | usd}}</td>
+        </tfoot>
+        </tbody>
+    </table>
+{% endblock %}

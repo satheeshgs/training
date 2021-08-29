@@ -1,0 +1,112 @@
+/*formating the body to use 90% of the area*/
+body{
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+/*all header h3 will inherit the same behavior across pages*/
+h4{
+    color: brown;
+    background-color: beige;
+    font-family: Verdana;
+    font-variant: small-caps;
+    padding: 10px 10px;
+}
+
+h5{
+    color: brown;
+    background-color: #FBFEFA;
+    font-family: Verdana;
+    font-style: italic;
+    font-variant: small-caps;
+}
+
+.info{
+    font-size: 110%;
+    color: #50564C;
+    margin-left: 1%;
+    margin-right:1%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.quote{
+    margin-left: 1%;
+    margin-right: 1%;
+    font-variant: small-caps;
+    font-family: Tahoma;
+    font-size: 130%;
+}
+
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 95%;
+    background-color: #AD0030;
+    color: #FBFCEF;
+    text-align: center;
+    font-family: Tahoma;
+    font-variant: small-caps;
+    overflow: hidden;
+    padding: 14px 16px;
+}
+
+.topnav{
+    background-color: #9F8A8C;
+    overflow: hidden;
+}
+
+.topnav a{
+    float: left;
+    color: white;
+    background-color: #9F8A8C;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 17px;
+}
+
+.topnav .active {
+    background-color: #AD0030;
+    color: white;
+}
+
+big {
+    font-size:130%;
+    font-style: inherit;
+}
+
+
+button {
+    background-color: #d9edff;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    font-size: 0.95rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0.375rem 0.75rem;
+    text-align: center;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    vertical-align: middle;
+}
+
+img {
+    width: 30%;
+    height: auto;
+}
+
+
+.column {
+  float: left;
+  width: 33%;
+  height: 100px;
+}
+
+.column img{
+  width: 80%;
+}
+
+.blur {
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
+}

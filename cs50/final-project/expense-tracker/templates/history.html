@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block main %}
+    <table class="table table-striped">
+        <thead style="text-align:left;">
+            <th>Date</th>
+            <th>Symbol</th>
+            <th>Name</th>
+            <th>Shares</th>
+            <th>Price</th>
+            <th>Transaction</th>
+            <th>Total</th>
+        </thead>
+        <tbody>
+            {% for stock in history %}
+            <tr style="text-align:left;">
+                <td>{{stock.date}}</td>
+                <td style="text-transform:uppercase;">{{stock.symbol}}</td>
+                <td>{{stock.name}}</td>
+                <td>{{stock.shares}}</td>
+                <td>{{stock.price | usd}}</td>
+                <td>{{stock.type}}</td>
+                <td>{{stock.total | usd}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
